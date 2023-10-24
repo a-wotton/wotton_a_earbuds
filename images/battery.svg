@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83.48 145">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="battery">
+    <path class="cls-1" d="m65.89,12.3h-4.37V2.69c0-1.48-1.2-2.69-2.69-2.69H24.66c-1.48,0-2.69,1.2-2.69,2.69v9.62h-4.37C7.88,12.3,0,20.18,0,29.9v97.5c0,9.72,7.88,17.6,17.6,17.6h48.29c9.72,0,17.6-7.88,17.6-17.6V29.9c0-9.72-7.88-17.6-17.6-17.6Z"/>
+  </g>
+</svg>

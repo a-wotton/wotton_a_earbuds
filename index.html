@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Earbud</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="css/main.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer id="earbud" src="earbud.gltf" ar ar-modes="scene-viewer webxr quick-look" camera-controls poster="poster.jpeg" shadow-intensity="1.14" environment-image="aircraft_workshop_01_1k.hdr" shadow-softness="0.7" camera-orbit="26.01deg 85.63deg 7.035m" field-of-view="49.7deg">
+      <button id="hotspot1" class="Hotspot" slot="hotspot-2" data-position="-0.04299096019122539m 1.0842828958387667m 0.12926557978935183m" data-normal="1.4510883779513474e-8m 0.9930471034744842m 0.11771767191435968m" data-visibility-attribute="visible">
+          <div id="hotspot-2" class="HotspotAnnotation"></div>
+      </button>
+      <button id="hotspot2" class="Hotspot" slot="hotspot-3" data-position="-0.7375818757758594m 0.9152847671445833m -1.2334390696540334m" data-normal="-0.9991581126858967m -0.0007257211024793758m 0.04101876622765043m" data-visibility-attribute="visible">
+          <div id="hotspot-3" class="HotspotAnnotation"></div>
+      </button>
+      <button id="hotspot3" class="Hotspot" slot="hotspot-4" data-position="0.0722718380266244m 0.1234661732388399m -0.8314131049419095m" data-normal="0.17262256209189827m -0.7687795952110259m 0.6157754339400039m" data-visibility-attribute="visible">
+          <div id="hotspot-4" class="HotspotAnnotation"></div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div> 
+    </model-viewer>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+  </body>
+</html>

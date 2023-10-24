@@ -1,0 +1,18 @@
+<model-viewer src="earbud.gltf" ar ar-modes="scene-viewer webxr quick-look" camera-controls poster="poster.jpeg" shadow-intensity="1.14" environment-image="aircraft_workshop_01_1k.hdr" shadow-softness="0.7" camera-orbit="26.01deg 85.63deg 7.035m" field-of-view="49.7deg">
+    <button class="Hotspot" slot="hotspot-2" data-position="-0.04299096019122539m 1.0842828958387667m 0.12926557978935183m" data-normal="1.4510883779513474e-8m 0.9930471034744842m 0.11771767191435968m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Touch controls for convience</div>
+    </button><button class="Hotspot" slot="hotspot-3" data-position="-0.7375818757758594m 0.9152847671445833m -1.2334390696540334m" data-normal="-0.9991581126858967m -0.0007257211024793758m 0.04101876622765043m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Strong durable case and long battery life</div>
+    </button><button class="Hotspot" slot="hotspot-4" data-position="0.0722718380266244m 0.1234661732388399m -0.8314131049419095m" data-normal="0.17262256209189827m -0.7687795952110259m 0.6157754339400039m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Comfortable fit with high quality sound</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>

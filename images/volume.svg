@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.19 113.23">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 7.3px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #231f20;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: 8.76px;
+      }
+
+      .cls-3 {
+        stroke-width: 5.84px;
+      }
+
+      .cls-4 {
+        fill: #231f20;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="sound">
+    <g>
+      <path class="cls-4" d="m30.4,30.44H13.88c-7.67,0-13.88,6.22-13.88,13.88v25.22c0,7.67,6.22,13.88,13.88,13.88h16.52l40.82,17.37V13.07L30.4,30.44Z"/>
+      <path class="cls-3" d="m87.09,34.61c8.77,5.47,14.35,13.71,14.35,22.94,0,8.23-4.44,15.68-11.63,21.08"/>
+      <path class="cls-1" d="m98.66,22.39c12.48,8.5,20.43,21.33,20.43,35.68,0,12.8-6.32,24.39-16.55,32.77"/>
+      <path class="cls-2" d="m108.62,4.38c19.05,12.98,31.18,32.55,31.18,54.45,0,19.53-9.65,37.22-25.26,50.02"/>
+    </g>
+  </g>
+</svg>
