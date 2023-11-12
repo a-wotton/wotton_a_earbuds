@@ -1,10 +1,17 @@
-#header {
-    height: 72px;
-    background-color: #4a4a4a;
+header {
+    background-color: #2d2d2d;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+
+header img {
+    height: 40px;
+    margin-left: 30px; 
 }
 
 #model-viewer {
-    border-bottom: 5px solid #4a4a4a;
+    border-bottom: 5px solid #2d2d2d;
 }
 
 #earbud {
@@ -12,14 +19,14 @@
     height: 200px;
     margin: 0 auto;
     margin-top: 20px;
-    border: 5px solid #4a4a4a;
+    border: 5px solid #2d2d2d;
     border-radius: 20px;
 }
 
 #touch-controls {
     margin-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 5px solid #4a4a4a;
+    border-bottom: 5px solid #2d2d2d;
 }
 
 #touch-controls-text {
@@ -32,14 +39,21 @@
 }
 
 .subtitle {
-    height: 65px; 
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.colour-choice {
+    justify-self: center;
 }
 
 .colourname {
-    height: 40px;
     margin-top: 45px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 0;
 }
 
 .colourname:first-of-type {
@@ -47,14 +61,26 @@
 }
 
 .colour {
-    height: 200px;
+    height: 250px;
     margin-top: 10px;
+    border: solid 5px #2d2d2d;
+}
+
+.colour-choice {
+    margin-top: 20px;
+
 }
 
 #banner {
-    height: 100px;
     margin-top: 30px;
     margin-bottom: 30px;
+    background-color: #2d2d2d;
+    padding: 20px;
+}
+
+#banner h2 {
+    color: #fff;
+    font-size: 18px;
 }
 
 .mobile-x-ray {
@@ -67,7 +93,6 @@
 }
 
 #animation {
-    height: 300px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -77,35 +102,69 @@ footer {
     background-color: #4a4a4a;
 }
 
+#scroll-animation {
+    max-width: 100%;
+}
+
+#animation div {
+    display: none;
+}
+
 @media screen and (min-width: 620px) {
-    #header{height: 85px;}
 
     #earbud {
         width: 600px;
         height: 300px;
     }
 
-    #model-viewer{border-bottom: 10px solid #4a4a4a;}
-    #touch-controls{margin-top: 35px; padding-bottom: 35px; border-bottom: 10px solid #4a4a4a;}
-    #touch-controls-text{height: 185px;}
-    #touch-controls-img {height: 350px;}
-    #subtitle {height:  80px;}
+    #model-viewer{border-bottom: 10px solid #2d2d2d;}
+
+    .subtitle {
+        font-size: 36px;
+    }
+
+    .colourname {
+        font-size: 28px;
+    }
+
     .colour {height: 300px;}
-    #banner{height: 150px;}
+
+    #banner h2 {
+        font-size: 24px;
+    }
+
     .mobile-x-ray{display: none;}
-    #animation{height: 700px;}
+
     footer {height: 150px;}
+
+    #animation div{
+        display: block;
+    }
 }
 
 @media screen and (min-width: 1280px) {
-    #header{height: 100px;}
 
     #earbud {
         width: 1000px;
         height: 500px;
     }
 
-    #model-viewer{border-bottom: 15px solid #4a4a4a; border-bottom: 10px solid #4a4a4a;}
-    #touch-controls-text{height: 200px;}
-    #touch-controls-img{height: 500px;}
+    #model-viewer{border-bottom: 15px solid #2d2d2d; border-bottom: 10px solid #2d2d2d;}
+
+    .subtitle {
+        font-size: 48px;
+        text-align: left;
+    }
+
+    .colourname {
+        font-size: 38px;
+    }
+
+    #banner h2 {
+        font-size: 32px;
+    }
+
+    footer {
+        display: end;
+    }
 }
