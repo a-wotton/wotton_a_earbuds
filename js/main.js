@@ -1,3 +1,6 @@
+(() => {
+
+gsap.registerPlugin(ScrollTrigger);
 // Handles loading the events for <model-viewer>'s slotted progress bar
 const onProgress = (event) => {
   const progressBar = event.target.querySelector('.progress-bar');
@@ -12,6 +15,8 @@ const onProgress = (event) => {
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
 
+
+//Creates Hotspots
 const hotspots = document.querySelectorAll(".Hotspot");
 let earBud = document.querySelector("#earbud"),
 hotspot1 = document.querySelector("#hotspot1"),
@@ -88,6 +93,8 @@ hotspot1.addEventListener("mouseover", showSpot1);
 hotspot2.addEventListener("mouseover", showSpot2);
 hotspot3.addEventListener("mouseover", showSpot3);
 
+
+
 //xray placeholder 
 
     //variables
@@ -101,11 +108,13 @@ hotspot3.addEventListener("mouseover", showSpot3);
         function onDown() {
             dragging = true;
             console.log("on Down");
+            max = imageCon.offsetWidth;
         }
 
         function onUp() {
             dragging = false;
             console.log("on Up");
+            max = imageCon.offsetWidth;
         }
 
         function onMove(event) {
@@ -116,9 +125,9 @@ hotspot3.addEventListener("mouseover", showSpot3);
                     x = min;
 
                 } else if (x > max) {
-                    x = max-4;
+                    x = max-10;
+                    debugger;
                 }
-
 
                 drag.style.left = x + "px";
                 left.style.width = x + "px";    
@@ -130,4 +139,49 @@ hotspot3.addEventListener("mouseover", showSpot3);
         drag.addEventListener("mousedown", onDown);
         document.body.addEventListener("mouseup", onUp);
         document.body.addEventListener("mousemove", onMove);
+
+        //Scroll Animation 
+        const canvas = document.querySelector("#scroll-animation");
+        const context = canvas.getContext("2d");
+        canvas.width = 1920;
+        canvas.height = 1080;
+        const frameCount = 190; 
+        const images = []; //array that holds the images
+        const buds = {
+            frame: 0
+        }
+
+        //run a for loop to populate our images array
+        for (let i=0; i<frameCount; i++) {
+          console.log(i);
+          const img = document.createElement("img");
+          img.src =`scrolling-animation/scrolling-animation${(i+1).toString().padStart(4, "0")}.jpg`
+          console.log(img)
+          images.push(img);
+          console.log(images);
+        }
+
+        gsap.to(buds, {
+          frame: 189,
+          snap: "frame",
+          scrollTrigger: {
+              trigger: "#scroll-animation",
+              pin: true,
+              scrub: 1,
+              start: "top top"
+          },
+          onUpdate: render
+      });
+      
+      images[0].addEventListener("onload", render)
+      
+      function render() {
+          console.log(buds.frame);
+          console.log(images[buds.frame]) //square brackets grab specific object from array
+          context.clearRect(0, 0, canvas.width, canvas.height);
+          context.drawImage(images[buds.frame], 0, 0);
+      }
+    
+
+ })();
 
